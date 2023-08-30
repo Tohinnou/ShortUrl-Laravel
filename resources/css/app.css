@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    /* background-color: black; */
+}
+
+.logo
+{
+    font-size: 2em;
+    color: #fff;
+    margin-left: 2em;
+    user-select: none;
+}
+
+.navigation 
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation > div a 
+{
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+.navigation .btnLogin-popup
+{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+
+input.form-control.form-control-lg:focus-visible,
+input.form-control.form-control-lg:focus:not(:focus-visible)
+{
+    outline: none;
+    border: 1px solid black;
+    box-shadow: none;
+}
