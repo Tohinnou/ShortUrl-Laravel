@@ -14,13 +14,10 @@ use Illuminate\Database\Eloquent\Collection;
 
 class ShortenController extends Controller
 {
-    private $urlStats;
-
     public function __construct(UrlService $urlService,UrlStatisticService $urlStatisticService)
     {
         $this->urlService = $urlService;
         $this->urlStatisticService = $urlStatisticService;
-        $this->urlStats = [];
     }
 
     public function add()

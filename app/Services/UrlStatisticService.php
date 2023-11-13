@@ -47,6 +47,8 @@ class UrlStatisticService
         return  $url_statistics = $url->first()?->statistics;
  
     }
+
+    
     public function chartData($statistics)
     {
         $data['labels'] = [];
